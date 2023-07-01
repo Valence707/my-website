@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  position: absolute;
+  padding: 15px;
+  width: calc(100vw - 30px);
+  max-width: 1000px;
+  margin: auto;
+}
+
+#title {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#title h1 {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  border-radius: 0px 6px 0px 6px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+  font-size: 36px;
+}
+#title button {
+  background-color: rgb(15, 15, 15);
+  border: 2px solid rgb(50, 50, 50);
+  border-bottom: none;
+  color: white;
+  border-radius: 4px 4px 0px 0px;
+  font-size: 16px;
+  padding: 15px;
+  margin: 0px 10px;
+  margin-top: 30px;
+}
+#title button:hover {
+  cursor: pointer;
+  background-color: rgb(50, 50, 50);
+}
+
+.content-container {
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(25, 25, 25);
+  border: 2px solid rgb(50, 50, 50);
+}
+
+.qc-panel {
+  width: 500px;
+  display: grid;
+  grid: auto auto auto auto/auto auto;
+  justify-content: center;
+  align-items: center;
+}
+.qc-panel button {
+  width: 100%;
+  padding: 6px;
+  font-size: 16px;
+  color: white;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 0px 0px 4px 4px;
+  background-color: rgb(50, 50, 50);
+}
+.qc-panel button:hover {
+  cursor: pointer;
+  background-color: rgb(75, 75, 75);
+}
+.qc-panel p {
+  font-size: 36px;
+  height: 10px;
+  padding: 0px;
+  margin: -2px 3px 3px 3px;
+}
+
+.user-fields {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+  grid-area: 2/1/span 1/span 2;
+  margin-top: 10px;
+}
+.user-fields input {
+  border: 2px solid rgb(50, 50, 50);
+  width: 250px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  caret-color: white;
+  padding: 10px 1px;
+  height: 18px;
+  align-content: center;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  text-align: center;
+}
+.user-fields input:focus {
+  outline: none;
+}
+
+.unit-container {
+  border-radius: 6px;
+  display: flex;
+  flex-flow: row nowrap;
+  grid-area: 4/1/span 1/span 2;
+  margin-top: 5px;
+  width: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid rgb(50, 50, 50);
+}
+.unit-container button {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.qc-categories {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  grid-area: 1/1/span 1/span 2;
+  text-align: left;
+  border-radius: 6px;
+  background-color: rgb(50, 50, 50);
+  color: black;
+}
+.qc-categories button {
+  filter: invert(0%);
+  background-color: rgb(50, 50, 50);
+  border: none;
+  color: white;
+  margin: 5px;
+  width: 120px;
+  padding: 10px 0px;
+  border-radius: 6px;
+  transition: background-color 0.15s, filter 0.15s;
+}
+.qc-categories button:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+.qc-unit-selection {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding: 2px;
+}
+.qc-unit-selection button {
+  border-radius: 3px;
+  width: auto;
+}
+
+.unit-display {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  grid-area: 3/1/span 1/span 2;
+}
+.unit-display p {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+#reference-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.reference-table {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.reference-item {
+  background-color: white;
+  color: black;
+  display: grid;
+  justify-content: center;
+  align-content: flex-start;
+  grid: auto/auto auto;
+  max-width: 25%;
+  padding: 0px 12px;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 6px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.reference-item h2 {
+  grid-area: 1/1/span 1/span 2;
+  text-align: center;
+}
+.reference-item p {
+  line-height: 20px;
+}
+
+.left-col-p {
+  margin-right: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}/*# sourceMappingURL=style.css.map */

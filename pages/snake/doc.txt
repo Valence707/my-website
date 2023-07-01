@@ -1,0 +1,14 @@
+Goals:
+    > Snake growth system.
+    > Score.
+    > Apple generation.
+    > Instructions.
+
+Log:
+2022-4-15:
+    > Added bounds.
+
+2022-4-14:
+    > Project started.
+    > Game engine is complete.
+    > Project is complete. Basic game works.

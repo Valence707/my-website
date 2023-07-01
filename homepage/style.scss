@@ -1,0 +1,161 @@
+@font-face
+{
+    font-family: alpha-prota;
+    src: url("../res/fonts/alpha-prota-font/AlphaProta-Wy7VE.ttf");
+}
+
+$bckgrndColor: #242424;
+$sectionColor: #575757;
+$buttonColor: #bdbdbd;
+
+body
+{
+    margin: 0;
+    background-color: $bckgrndColor;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    user-select: none;
+}
+
+h2, button
+{
+    font-family: alpha-prota;
+    color: white;
+    user-select: none;
+}
+
+button
+{
+    font-size: 22px;
+    font-weight: 900;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+}
+
+button:hover
+{
+    background-color: rgb(190, 190, 190);
+    color: black;
+    cursor: pointer;
+}
+
+#titlePage
+{
+    background-color: transparent;
+    width: fill;
+    height: 96vh;
+    margin: 2vh 1vw;
+    display: flex;
+    flex-flow: row;
+
+    h1 {
+        font-family: alpha-prota;
+        font-weight: 900;
+        font-size: 128px;
+        margin: 40px;
+        color: yellow;
+    }
+}
+
+.body-container
+{
+    width: fill;
+    margin: 20px;
+    display: flex;
+}
+
+.sidebar-nav
+{
+    font-family: alpha-prota;
+    background-color: transparent;
+    position: sticky;
+    top: 20px;
+    width: 300px;
+    height: calc(100vh - 40px);;
+    margin-right: 20px;
+    display: flex;
+    flex-flow: column;
+
+    h2
+    {
+        margin: 10px;
+        color: yellow;
+    }
+
+    button
+    {
+        width: fill;
+        margin: 10px;
+    }
+}
+
+.body-content-container
+{
+    font-family: alpha-prota;
+    background-color: transparent;
+    width: fill;
+}
+
+.body-section
+{
+    width: fill;
+    margin-bottom: 20px;
+    height: 99vh;
+    background-color: transparent;
+    border: 1px solid rgb(190, 190, 190);
+    display: flex;
+    flex-flow: column;
+
+    h2
+    {
+        margin: 10px;
+    }
+}
+
+.body-section-content
+{
+    background-color: transparent;
+    margin: 20px;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.display-card
+{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h3
+    {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.display-card:hover {
+    cursor: pointer;
+}
+
+footer
+{
+    width: fill;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid blue;
+}

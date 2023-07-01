@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/pages/tictactoe/style.css">
+        <title>Tic Tac Toe</title>
+        <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+    </head>
+    <body>
+        <button class="home-button" onclick="location.href='/index.html'">Home</button>
+
+        <nav>
+            <h1>Tic Tac Toe</h1>
+        </nav>
+
+        <!-- Game -->
+        <div id="game"></div>
+
+        <!-- <script src='/public/scripts/jquery/jquery-3.6.0.js'></script> -->
+
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="/public/scripts/react/react.production.min.js" crossorigin></script>
+        <script src="/public/scripts/react/react-dom.production.min.js" crossorigin></script>
+
+        <!-- Load Production environment. -->
+        <!-- <script src="game-production.js"></script> -->
+
+        <!-- Load Development environment. -->
+        <script src="game-development.js" type="text/babel"></script>
+        <script src="/public/scripts/babel.min.js"></script>
+
+        <!-- Load main script. -->
+    </body>
+</html>

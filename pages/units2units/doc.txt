@@ -1,0 +1,19 @@
+Goals:
+    > Nice theme (orange)
+    > Quick Convert
+        > Simple interface
+        > Show most practical units
+        > Show formula between units
+
+    > Multiple conversion boxes (add ability to convert multiple units simultaneously)
+    > Conversion presets
+    > User types number and selects unit, is given list of output units
+    > Reference table for all important unit conversions (imperial + metric)
+    > Ability to save converted units to text file
+    > History panel
+    > Add calculator
+        > Quickly calculate converted units
+    > Widget & modular based
+    > Account
+    > Conversion:
+        > Categories of measurement: Length, area, volume, mass, time, temperature

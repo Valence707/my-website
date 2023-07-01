@@ -1,0 +1,81 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.home-button {
+  position: absolute;
+  margin: 10px;
+  border: none;
+  font: 24px Arial;
+  padding: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.618);
+}
+
+.home-button:hover {
+  cursor: pointer;
+}
+
+.app {
+  background-color: #181a1a;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serifq;
+}
+.app h1 {
+  font-size: 48px;
+  color: #ffff5b;
+  box-shadow: 0px 0px 12px 2px rgba(255, 255, 91, 0.3411764706);
+  padding: 10px;
+  border-radius: 6px;
+}
+.app h3 {
+  color: white;
+}
+.app svg {
+  display: grid;
+  grid: repeat(20, 10px)/repeat(20, 10px);
+  width: 625px;
+  height: 625px;
+  background-color: black;
+  border: 6px solid black;
+  border-radius: 6px;
+}
+.app button {
+  border: none;
+  border-radius: 6px;
+  font-size: 24px;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: black;
+  color: #ffff5b;
+  transition: background-color 0.1s, color 0.1s;
+}
+.app button:hover {
+  background-color: #ffff5b;
+  color: black;
+  cursor: pointer;
+}
+
+.status-display {
+  width: 632px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 3px;
+}
+.status-display h3 {
+  margin: 0px;
+  color: white;
+}
+
+.game-over-text {
+  font: 48px Arial;
+  fill: white;
+}
+.game-over-text tspan {
+  font: 24px Arial;
+}/*# sourceMappingURL=style.css.map */
