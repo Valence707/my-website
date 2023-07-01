@@ -1,3 +1,7 @@
+My Website
+Created by Marcus Secu
+v1
+
 Ideas:
 > Each section of the site could have a different theme (color theme and art style). For example, one section could be 8-bit pixelated, another could be modern brutalist. Color schemes could change as well.
     > Theme ideas: CRT screen, 8bit, paper, medieval, sci-fi, Halo, Minecraft, LEGO, elegant, classical music, cartoon
@@ -14,9 +18,9 @@ Ideas:
 > Main page does not have quick nav
 > Each section has its own UNIQUE and RELATED theme, like games section is 8-bit and 
 
-To-Do:
-> 
+to-do:
+    > Update readme
 
-Log:
+log:
 2023-2-15:
     > 
