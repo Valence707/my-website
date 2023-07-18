@@ -20,14 +20,12 @@ body {
   flex-flow: row nowrap;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 #title h1 {
   background-color: rgb(50, 50, 50);
   color: white;
   border-radius: 0px 6px 0px 6px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px;
@@ -202,7 +200,6 @@ body {
   padding: 0px 12px;
   border: 2px solid rgb(75, 75, 75);
   border-radius: 6px;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -216,7 +213,6 @@ body {
 
 .left-col-p {
   margin-right: 20px;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }/*# sourceMappingURL=style.css.map */

@@ -1,26 +1,10 @@
 My Website
 Created by Marcus Secu
-v1
-
-Ideas:
-> Each section of the site could have a different theme (color theme and art style). For example, one section could be 8-bit pixelated, another could be modern brutalist. Color schemes could change as well.
-    > Theme ideas: CRT screen, 8bit, paper, medieval, sci-fi, Halo, Minecraft, LEGO, elegant, classical music, cartoon
-> Themes should also correspond to the page content.
-> Main page should be a mix of themes. Should mix be static or animated? Animated = moving crack lines show different themes. This would be cool.
-> Each section of the site could also have different easter eggs, like games or puzzles or challenges, corresponding to theme.
-> The above ideas could extend to blog posts.
-> There should be a unifying theme that encompasses all the other themes. Windows 10 theme. This is good. Simple, lightweight, and easy to use.
-> Time-based color schemes (example: get user's time, change color of everything based on it.)
-> OVERALL THEME: Page is framed by a simple flat Windows 10-like UI theme, and within the frame different themes are on display. Like a showcase.
-> Make main page vertical scroll, for sections other than title on desktop add a sidebar with quick links and a search bar (navigation pane) that can be hidden / revealed.
-
-> Theme: Simple Windows-like, with a base color and highlight colors (NEON).
-> Main page does not have quick nav
-> Each section has its own UNIQUE and RELATED theme, like games section is 8-bit and 
 
 to-do:
     > Update readme
+    > COMPLETE OVERHAUL
 
 log:
-2023-2-15:
-    > 
+2023-7-17:
+    > Holy moly. I am going to have a wall of stuff, and allow users to organize it however they want. I'm gonna allow them to shuffle everything, sort, etc.
