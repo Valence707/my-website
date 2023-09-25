@@ -1,0 +1,14 @@
+Goals:
+
+Log:
+2022-4-9:
+    > Finished basic presentable site.
+
+2022-4-7:
+    > Basic game finished. Built using ReactJS.
+        > Grid.
+        > Interaction (user input).
+        > Game validation.
+
+2022-4-4:
+    > Project initialized.

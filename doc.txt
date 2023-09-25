@@ -3,7 +3,8 @@ Created by Marcus Secu
 
 to-do:
     > Update readme
-    > COMPLETE OVERHAUL
+    > make color transition between dark red / purple and black
+    > Put stars in black background to make more detailed (make them move according to cursor pos)
 
 log:
 2023-7-17:

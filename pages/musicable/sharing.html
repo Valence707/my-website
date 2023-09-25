@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="sharing.css">
+    <script src='sharing.js'></script>
+  </head>
+  <body>
+
+    <!-- The toolbar -->
+    <div id='toolBarContainer'>
+      <div id="toolBar">
+          <div onclick="location.href='index.html'"><img class="toolBarUtilityButton" src='titleIMG/musicableLogo.png'></div>
+          <hr style='color: transparent; width: 100%;'>
+          <div onclick="location.href='index.html'"><img src='titleIMG/musicableHeadphonesToolbarIcon.png'></div>
+          <div onclick='location.href="sharing.html"'><img src='titleIMG/musicableShareToolbarIcon.png'></div>
+          <div onclick='location.href="Forums.html"'><img src='titleIMG/musicableDiscussToolbarIcon.png'></div>
+          <hr style='color: transparent; width: 100%;'>
+          <div onclick='infoOverlayOn()'><img class="toolBarUtilityButton" src='titleIMG/MusicableHelpIcon.png'></div>
+          <div onclick='settingsOverlayOn()'><img class="toolBarUtilityButton" src='titleIMG/MusicableSettingsIcon.png'></div>
+      </div>
+    </div>
+
+    <!-- The background of the page contains moving images-->
+    <div id="backgroundDecorationContainer">
+      <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+      <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+      <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+      <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+      <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+      <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">  
+      <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+      <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+      <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+      <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">
+      <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+      <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+      <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+      <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+      <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+      <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+      <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">
+      <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+    </div>
+
+    <!-- Site Overlays -->
+    <div id='overlayContainer'>
+
+      <!-- Info Overlay -->
+      <div id='infoOverlay'>
+          <h1 class='overlayTitle'>&#91;About Musicable&#93;</h1>
+          <p>
+              Musicable's primary goal is to be a unified platform dedicated to ALL things music.
+              That's right, while other music sites only offer basic music playback and feedback, Musicable creates a framework around which communities
+              can directly listen to, share, and discuss music with more dynamic (that means interactive) control and functionality. Don't believe me?
+              Ok, so I AM a little biased, but you can go see for yourself. <span style="font-weight:900;"><br>Enjoy!</span>
+              <br><br><br>
+              <span style="filter: opacity(50%); font-size: 10px;">Created by Marcus Secu, Orestes Gonzales, and Josue Delgado.</span>
+              <br>
+              <span style="filter: opacity(50%); font-size: 10px;">Contact us: (123) 456-7890</span>
+              <br>
+              <span style="filter: opacity(50%); font-size: 10px;">&#169; Copyright Musicable, Inc., 2021, all rights reserved.</span>
+          </p>
+          <h3 class='overlayCloseButton' onclick='overlayOff()'>&#91;close&#93;</h3>
+      </div>
+
+      <!-- Settings Overlay -->
+      <div id='settingsOverlay'>
+          <h1 class='overlayTitle'>&#91;Settings&#93;</h1>
+          <h2 onclick='colorThemeChange()'>&#91;Visual Theme: <span id='colorThemeIndicatorButton'>Dark</span>&#93;</h2>
+          <h3 class='overlayCloseButton' onclick='overlayOff()'>&#91;close&#93;</h3>
+      </div>
+    </div>
+
+    <div id='pageBody'>
+      <div id='titleBar'>
+        <img src='sharingIMG/musicableLogoPurple.png'>
+        <h2>Sharing!</h2>
+        <img src='sharingIMG/musicableLogoPurpleReversed.png'>
+      </div>
+      
+      <h3>Here you can share your Playists and Reviews</h3>
+      <h4>Playlists </h4>
+      <div id='playlistsShowcase'>
+        <div class='playlistIcon'>
+          <img src="sharingIMG/song-cover-1.png" alt="Song ocover undead"
+              height= "90px"
+              width= "90px"/>
+
+          <p>-Lil Coolaid</p>
+        </div>
+        
+        <div class='playlistIcon'>
+          <img src="sharingIMG/sweet-lemonade-cover-2.png" alt="Red bird in yellow water" 
+              height= "90px"
+              width= "90px"/>
+
+          <p>-Bandaid Ripper</p>
+        </div>
+        <div class='playlistIcon'>
+          <img src="sharingIMG/ASAp-duck-3.jpg" alt="Duckie swimming" 
+              height= "90px"
+              width= "90px"/>
+
+          <p>-ASAP Ducky</p>
+        </div>
+        <div class='playlistIcon'>
+          <img src="sharingIMG/Sicario-4.jpg" alt="scary man with guitar" 
+              height= "90px"
+              width= "90px"/>
+
+          <p>-Broken Souls</p>
+        </div>
+        <div class='playlistIcon'>
+          <img src="sharingIMG/Hyper-world.png" alt="Kid dancing" 
+              height= "90px"
+              width= "90px"/>
+
+          <p>-Hyper WRLD</p>
+        </div>
+      </div>
+
+      <h5> Reviews </h5>
+          
+      <div class='reviewSection'>
+        <img class='reviewImage' src="sharingIMG/happy-face-black-background.jpg" alt="white happy face" 
+            height= "30px"
+            width = "50px">
+        <div class='reviewSectionText'>
+          <p9>Anonymous - Very good love the tase of music in this playlist. </p9> 
+          <p10> Playlist Reviewed: ASAP Ducky</p10>
+        </div>
+      </div>
+
+      <div class='reviewSection'>
+        <img class='reviewImage' src="sharingIMG/sad-face-with-black-background.jpg" alt="White sad Face" 
+            height= "30px"
+            width= "50px"/>
+        <div class='reviewSectionText'>
+          <p9>Goat146 - Not my type of music! found it very bland no music taste. </p9>
+          <p10>Playlist Reviewed: Lil Coolaid</p10> 
+        </div>
+      </div>
+
+      <div class='reviewSection'>
+        <img class='reviewImage' src="sharingIMG/neutral-face.jpg" alt="neutral face"
+            height= "30px"
+            width= "50px"
+            />
+        <div class='reviewSectionText'>
+          <p9> Hoop22 - Confused; there are some good and bad songs, overall 5/10! </p9>
+          <p10> Playlist Reviewed: Hyper WRLD</p10>
+        </div>
+        
+      </div>          
+    </div>
+  </body>
+</html>

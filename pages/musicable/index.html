@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='style.css'>
+        <script src="main.js"></script>
+        <link rel="shortcut icon" href="titleIMG/musicableLogo.png">
+    </head>
+    <body>
+
+        <!-- The toolbar -->
+        <div id='toolBarContainer'>
+            <div id="toolBar">
+                <div onclick="location.href='index.html'"><img class="toolBarUtilityButton" src='titleIMG/musicableLogo.png'></div>
+                <hr style='color: transparent; width: 100%;'>
+                <div onclick='location.href="index.html"'><img src='titleIMG/musicableHeadphonesToolbarIcon.png'></div>
+                <div onclick='location.href="sharing.html"'><img src='titleIMG/musicableShareToolbarIcon.png'></div>
+                <div onclick='location.href="Forums.html"'><img src='titleIMG/musicableDiscussToolbarIcon.png'></div>
+                <hr style='color: transparent; width: 100%;'>
+                <div onclick='infoOverlayOn()'><img class="toolBarUtilityButton" src='titleIMG/MusicableHelpIcon.png'></div>
+                <div onclick='settingsOverlayOn()'><img class="toolBarUtilityButton" src='titleIMG/MusicableSettingsIcon.png'></div>
+            </div>
+        </div>
+
+        <!-- Site Overlays -->
+        <div id='overlayContainer'>
+
+            <!-- Info Overlay -->
+            <div id='infoOverlay'>
+                <h1 class='overlayTitle'>&#91;About Musicable&#93;</h1>
+                <p>
+                    Musicable's primary goal is to be a unified platform dedicated to ALL things music.
+                    That's right, while other music sites only offer basic music playback and feedback, Musicable creates a framework around which communities
+                    can directly listen to, share, and discuss music with more dynamic (that means interactive) control and functionality. Don't believe me?
+                    Ok, so I AM a little biased, but you can go see for yourself.
+                    <br><br>
+                    <span style="filter: opacity(50%); font-size: 10px;">Created by Marcus Secu, Orestes Gonzales, and Josue Delgado.</span>
+                    <br><br>
+                    <span style="filter: opacity(50%); font-size: 10px;">Contact us: (123) 456-7890</span>
+                    <br><br>
+                    <span style="filter: opacity(50%); font-size: 10px;">&#169; Copyright Musicable, Inc., 2021, all rights reserved.</span>
+                </p>
+                <h3 class='overlayCloseButton' onclick='overlayOff()'>&#91;close&#93;</h3>
+            </div>
+
+            <!-- Settings Overlay -->
+            <div id='settingsOverlay'>
+                <h1 class='overlayTitle'>&#91;Settings&#93;</h1>
+                <h2 onclick='colorThemeChange()'>&#91;Visual Theme: <span id='colorThemeIndicatorButton'>Dark</span>&#93;</h2>
+                <h3 class='overlayCloseButton' onclick='overlayOff()'>&#91;close&#93;</h3>
+            </div>
+        </div>
+
+        <!-- The body of the first page, contains the title and buttons -->
+        <div id='titleBody'>
+
+            <!-- The background of the page contains moving images-->
+            <div id="backgroundDecorationContainer">
+                <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+                <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+                <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+                <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+                <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+                <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">  
+                <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+                <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+                <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+                <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">
+                <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+                <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+                <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+                <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+                <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+                <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+                <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">
+                <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+            </div>
+
+            <div id='titleBar'>
+                <img src='titleIMG/musicableLogoReversed.png'>
+                <div id="musicableTitle">
+                    [MUSICABLE]
+                    <div style="font-size: 12px;">
+                        More than just music.
+                    </div>
+                </div>
+                <img src='titleIMG/musicableLogo.png'>
+            </div>
+
+            <div id='titleButtonContainer'>
+                <div id="listenButton" onclick="location.href='index.html'">
+                    <h1>[LISTEN]</h1>
+                    <img src='titleIMG/titleIMG_headphones.png'>
+                    <p class='titleButtonParagraph'>Music was made to be listened to. Musicable was made to play it for you.</p>
+                </div>
+                <div id="shareButton" onclick="location.href='sharing.html'">
+                    <h1>[SHARE]</h1>
+                    <img src='titleIMG/titleIMG_share_icon.png'>
+                    <p class='titleButtonParagraph'>Music was made to be shared. Does Musicable make sharing easy? Of course!</p>
+                </div>
+                <div id="discussButton" onclick="location.href='Forums.html'">
+                    <h1>[DISCUSS]</h1>
+                    <img src='titleIMG/titleIMG_discuss.png'>
+                    <p class='titleButtonContainer'>Music was made to be discussed, rated, and reviewed. Enter, the Musicable Forums!</p>
+                </div>
+            </div>
+            <div id='musicPlayer'>
+                <div class='uniformSongContainer'>
+                    <img id='songArt' src='musicplayer/songs/Imagine Dragons - Believer/Imagine Dragons - Believer.png'></img>
+                </div>
+                <table id='songPlayer' style="margin: auto;">
+                    <tr>
+                        <th class='playerText'>NOW PLAYING<br> <span id='songTitle'>Imagine Dragons - Believer</span></th>
+                    </tr>
+                    <tr style="height: 75px;">
+                        <th id='audioSource'>
+                            <audio id='songSource' controls>
+                                <source src="musicplayer/songs/Imagine Dragons - Believer/Imagine Dragons - Believer.mp3" type='audio/mpeg'>
+                                AUDIO ERROR.
+                            </audio>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td id='playerControlsContainer'>
+                            <div class='playerText playerControls' id='backButton' onclick=setSong(this)>|&lt;&lt;</div>
+                            <div class='playerText playerControls' id='forwardButton' onclick=setSong(this)>&gt;&gt;|</div>
+                            <div class='playerText playerControls' id='playlistDropDown'>QUEUE</div>
+                        </td>
+                    </tr>
+                </table>
+                <div id='socialContainer'>
+                    <div id='socialControls'>
+                        <div id='heart' onclick=increaseLikes()><img src="titleIMG/heartIcon.png"></div>
+                        <div id='heartCounterDisplay'>999M</div>
+                        <hr style="height:200px;color:transparent;">
+                        <div id='share'><img src="titleIMG/shareIcon.png"></div>
+                    </div>
+                    <div id='discussionField'>
+                        <textarea id='commentDisplay'></textarea>
+                        <textarea id='userComment' name='userComment' placeholder="Press 'Enter' to submit a comment..." onkeypress="updateComments(event)"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- To-Do:
+    > Give music player localStorage variables that store playing song.
+    > Give songs proprietary comments & likes.
+    > Make "Queue" button work.
+    > Add animations to Sharing page.
+-->

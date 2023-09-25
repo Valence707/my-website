@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title> Forums </title>
+    <link rel="shortcut icon" href="susy.png" type="image/png">
+  </head>
+  <body>
+
+  <link rel="stylesheet" href="Forums.css"> 
+  <script src="Forums.js"></script> 
+
+  <div id="background">
+    <div id="backgroundDecorationContainer">
+      <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+      <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+      <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+      <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+      <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+      <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">  
+      <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+      <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+      <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+      <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">
+      <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+      <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+      <img class="backgroundAnimation1 animatedBackgroundImage" src="titleIMG/titleIMG_flag_note.png">
+      <img class="backgroundAnimation4 animatedBackgroundImage" src="titleIMG/titleIMG_quarter_note.png">
+      <img class="backgroundAnimation2 animatedBackgroundImage" src="titleIMG/titleIMG_minim.png">
+      <img class="backgroundAnimation5 animatedBackgroundImage" src="titleIMG/titleIMG_semibreve.png">
+      <img class="backgroundAnimation3 animatedBackgroundImage" src="titleIMG/titleIMG_semiquaver.png">
+      <img class="backgroundAnimation6 animatedBackgroundImage" src="titleIMG/titleIMG_double_quarter_note.png">
+    </div>
+  </div>
+
+  <!-- The toolbar -->
+  <div id='toolBarContainer'>
+    <div id="toolBar">
+        <div onclick="location.href='index.html'"><img class="toolBarUtilityButton" src='titleIMG/musicableLogo.png'></div>
+        <hr style='color: transparent; width: 100%;'>
+        <div onclick='location.href="index.html"'><img src='titleIMG/musicableHeadphonesToolbarIcon.png'></div>
+        <div onclick='location.href="sharing.html"'><img src='titleIMG/musicableShareToolbarIcon.png'></div>
+        <div onclick='location.href="Forums.html"'><img src='titleIMG/musicableDiscussToolbarIcon.png'></div>
+        <hr style='color: transparent; width: 100%;'>
+        <div onclick='infoOverlayOn()'><img class="toolBarUtilityButton" src='titleIMG/MusicableHelpIcon.png'></div>
+    </div>
+</div>
+
+  <!-- Site Overlays -->
+  <div id='overlayContainer'>
+
+      <!-- Info Overlay -->
+      <div id='infoOverlay'>
+          <h1 class='overlayTitle'>&#91;About Musicable&#93;</h1>
+          <p>
+            Musicable's primary goal is to be a unified platform dedicated to ALL things music.
+            That's right, while other music sites only offer basic music playback and feedback, Musicable creates a framework around which communities
+            can directly listen to, share, and discuss music with more dynamic (that means interactive) control and functionality. Don't believe me?
+            Ok, so I AM a little biased, but you can go see for yourself. <span style="font-weight:900;"><br>Enjoy!</span>
+              <br><br>
+              <span style="filter: opacity(50%); font-size: 10px;">Created by Marcus Secu, Orestes Gonzalez, and Josue Delgado.</span>
+              <br>
+              <span style="filter: opacity(50%); font-size: 10px;">Contact us: (123) 456-7890</span>
+              <br>
+              <span style="filter: opacity(50%); font-size: 10px;">&#169; Copyright Musicable, Inc., 2021, all rights reserved.</span>
+          </p>
+          <h3 class='overlayCloseButton' onclick='overlayOff()'>&#91;close&#93;</h3>
+      </div>
+
+      <!-- Settings Overlay -->
+      <div id='settingsOverlay'>
+          <h1 class='overlayTitle'>&#91;Settings&#93;</h1>
+          <h2 onclick='colorThemeChange()'>&#91;Visual Theme: <span id='colorThemeIndicatorButton'>Dark</span>&#93;</h2>
+          <h3 class='overlayCloseButton' onclick='overlayOff()'>&#91;close&#93;</h3>
+      </div>
+  </div>
+
+    <div id='pageBody'>
+      <div class="title">
+        <h1> Forums</h1>
+      </div>
+      <div class="multiborder">
+        <p> Start a conversation about music!</p>
+        <div class="top-border-1"></div>
+        <div class="top-border-2"></div>
+      </div>
+        <div class= "yes">
+          <div id="1"><h1>Yall mess with A$AP Ducky</h1><bl></bl><p>His new album Duck Testing came out yesterday!</p><p>6 Like 5 Comments</p></div>
+          <div><h1>Fsvorite artist?</h1><bl></bl><p>Who are your favourite artists?</p><p>3 Like 2 Comments</p></div>
+          <div><h1>Bloons soundtrack</h1><bl></bl><p>The bloons soundtrack goes hard </p><p>10000 Like 21 Comments</p></div>
+        </div>
+        <div class= "yes">
+          <div><h1>The classical Mozart</h1><bl></bl><p> Mozart Symphony No. 40 is like music to my ears </p><p>5 Likes 2 Comments</p></div>
+          <div><h1>K/DA</h1><bl></bl><p> My favourite K/DA song is POP/STARS</p><p>0 Likes 0 Comments</p></div>
+          <div><h1>New album?</h1><bl></bl><p> Who do you think will release a new album next?</p><p>25 Likes 20 Comments</p></div>
+        </div>
+        <div class= "yes">
+          <div><h1>Favorite songs?</h1><bl></bl><p> What are your favorite songs?</p><p>10 Likes 6 Comments</p></div>
+          <div>I love this new song</h1><bl></bl><p>Did you guys hear this new song by joe biden</p><p>2 Like 1 Comments</p></div>
+          <div>Nba Youngboy?</h1><bl></bl><p>Is youngboy actually better?</p><p>400 Like 21 Comments</p></div>
+        </div>
+    </div>
+  </body>
+</html>
