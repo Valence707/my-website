@@ -4,22 +4,86 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-flow: column;
 }
 
 h1 {
-  color: rgb(126, 0, 199);
+  color: white;
   margin-top: 0px;
   padding-left: 1vw;
-  font-size: 3vw;
+  font-size: 48px;
 }
 
 .tile-container {
   padding: 10px;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-flow: row wrap;
 }
 
-.test {
-  background-color: red;
+.tile {
+  background-color: rgb(30, 30, 30);
+  border: 5px solid rgb(30, 30, 30);
+  margin: 5px;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.tile:hover {
+  cursor: pointer;
+  border-color: rgb(60, 60, 60);
+}
+
+.title-tile {
+  max-width: 300px;
+  font-size: 24px;
+  height: 32px;
+}
+
+.normal-tile {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: contain;
+}
+
+.big-tile {
+  width: 300px;
+  height: 300px;
+}
+
+.toolbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  width: 100vw;
+}
+
+.toolbar-button {
+  border: none;
+  font-size: 24px;
+  padding: 10px 10px 10px 10px;
+  background-color: black;
+  color: white;
+  filter: brightness(0.5);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.toolbar-button:hover {
+  cursor: pointer;
+  filter: brightness(1);
+}
+
+.toolbar-search {
+  border: none;
+  outline: none;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.toolbar-search:focus {
+  background-image: linear-gradient(90deg, red, rgb(57, 179, 0), blue);
 }/*# sourceMappingURL=style.css.map */
